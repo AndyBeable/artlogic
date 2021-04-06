@@ -50,20 +50,21 @@ h3 {
 
 .main h3 {
   color: black;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
+  font-size: 1.5em;
 }
 
 .accordion__el {
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .accordion__header {
-  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 .accordion__answer {
@@ -72,11 +73,9 @@ h3 {
   transition: 500ms ease max-height;
 }
 
-.active {
-}
-
 .arrow__up {
   height: 0.5rem;
+  margin-left: auto;
 }
 
 .arrow__down {
