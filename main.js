@@ -34,7 +34,7 @@ let contentHTML = data.rows
     question =>
       `<div class="accordion__el">
             <div class="accordion__header">
-              <h4>${question.title}</h4>
+              <h5>${question.title}</h5>
               <img
                 id="icon"
                 class="arrow__up"
