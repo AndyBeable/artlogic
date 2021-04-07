@@ -4,17 +4,9 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
-}
-
 body {
   font-family: Helvetica, sans-serif;
 }
-
-/* .container {
-  max-height: 100vh;
-} */
 
 .header {
   background-image: url('/assets/background.jpg');
@@ -118,6 +110,7 @@ img:focus {
   .container {
     display: flex;
   }
+
   .header {
     width: 50%;
     height: 100vh;
@@ -127,6 +120,18 @@ img:focus {
     height: 100vh;
   }
 
+  .logo {
+    font-size: 25px;
+  }
+
+  .header__primary {
+    max-width: 70%;
+  }
+
+  .header__primary h1 {
+    font-size: 42px;
+  }
+
   .main {
     width: 50%;
     height: 100vh;
@@ -134,5 +139,15 @@ img:focus {
 
   .accordion__answer {
     line-height: 2rem;
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .heading__primary {
+    max-width: 70%;
+  }
+  .heading__primary h1 {
+    font-size: 52px;
   }
 }
