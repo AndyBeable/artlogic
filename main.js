@@ -29,6 +29,7 @@ const data = {
   ],
 };
 
+// RENDER CONTENT
 let contentHTML = data.rows
   .map(
     question =>
@@ -48,9 +49,10 @@ let contentHTML = data.rows
           </div>`
   )
   .join('');
-
+console.log(data.rows);
 document.querySelector('.accordion__container').innerHTML = contentHTML;
 
+// ACCORDION FUNCTIONALITY
 const accordionHeader = document.querySelectorAll('.accordion__header');
 accordionHeader.forEach(accordionHeader => {
   accordionHeader.addEventListener('click', () => {
