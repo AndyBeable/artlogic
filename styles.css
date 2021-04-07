@@ -73,7 +73,7 @@ h3 {
 .accordion__answer {
   max-height: 0;
   overflow: hidden;
-  transition: 500ms ease max-height;
+  transition: 1s ease max-height;
   color: #555555;
   line-height: 1.6rem;
 }
