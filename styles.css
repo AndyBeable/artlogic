@@ -4,8 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: Helvetica, sans-serif;
+}
+
+.container {
+  height: 100vh;
 }
 
 .header {
@@ -51,7 +59,7 @@ h3 {
 .main h3 {
   color: black;
   margin: 1.5rem 0;
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
 }
 
 .accordion__el {
@@ -67,19 +75,46 @@ h3 {
   margin-bottom: 1rem;
 }
 
+/* .accordion__header h4 {
+  font-weight: lighter;
+} */
+
 .accordion__answer {
   max-height: 0;
   overflow: hidden;
   transition: 500ms ease max-height;
+  color: #999898;
 }
 
-.arrow__up {
+img {
   height: 0.5rem;
   margin-left: auto;
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+img:focus {
+  transform: rotate(0deg);
+  transition: transform 0s;
 }
 
-.arrow__down {
+/* .arrow__up {
   height: 0.5rem;
+  margin-left: auto;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+.arrow__up:focus {
+  transform: rotate(180deg);
+} */
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -98,5 +133,9 @@ h3 {
   .main {
     width: 50%;
     height: 100vh;
+  }
+
+  .accordion__answer {
+    line-height: 2rem;
   }
 }
