@@ -49,7 +49,7 @@ h3 {
 }
 
 .main {
-  margin: 1rem 2rem;
+  padding: 1rem 2rem;
 }
 
 .main h3 {
@@ -78,25 +78,15 @@ h3 {
   line-height: 1.6rem;
 }
 
-.accordion__header img {
-  height: 0.5rem;
-  margin-left: auto;
-  transform: rotate(180deg);
-  transition: transform 0.5s;
-}
-.accordion__header img:active {
-  transform: rotate(0deg);
-}
-
-/* .arrow__up {
+.arrow__up {
   height: 0.5rem;
   margin-left: auto;
   transition-property: transform;
   transition-duration: 1s;
 }
-.arrow__up:focus {
+.active .arrow__up {
   transform: rotate(180deg);
-} */
+}
 
 @media screen and (min-width: 380px) {
   .header__primary {

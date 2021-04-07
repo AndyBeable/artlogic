@@ -32,10 +32,10 @@ const data = {
 // RENDER CONTENT
 let contentHTML = data.rows
   .map(
-    question =>
+    (question, index) =>
       `<div class="accordion__el">
             <div class="accordion__header">
-              <h5>${question.title}</h5>
+              <h5>${index + 1}. ${question.title}</h5>
               <img
                 id="icon"
                 class="arrow__up"
