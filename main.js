@@ -37,9 +37,8 @@ let contentHTML = data.rows
             <div class="accordion__header">
               <h5>${index + 1}. ${question.title}</h5>
               <img
-                id="icon"
-                class="arrow__up"
-                src="/assets/arrow-up.png"
+                class="arrow__down"
+                src="/assets/arrow-down.png"
                 alt="arrow icon"
               />
             </div>

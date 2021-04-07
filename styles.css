@@ -73,18 +73,18 @@ h3 {
 .accordion__answer {
   max-height: 0;
   overflow: hidden;
-  transition: 1s ease max-height;
+  transition: 0.5s ease max-height;
   color: #555555;
   line-height: 1.6rem;
 }
 
-.arrow__up {
+.arrow__down {
   height: 0.5rem;
   margin-left: auto;
   transition-property: transform;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
-.active .arrow__up {
+.active .arrow__down {
   transform: rotate(180deg);
 }
 
