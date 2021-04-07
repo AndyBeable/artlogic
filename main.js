@@ -29,17 +29,27 @@ const data = {
   ],
 };
 
-let info = data.rows;
-console.log(info[0]);
-
-document.querySelector('.accordion__container').innerHTML = info
+let contentHTML = data.rows
   .map(
     question =>
-      `<div className="accordion__header">
-       <h4>${info.title}</h4>
-      </div>`
+      `<div class="accordion__el">
+            <div class="accordion__header">
+              <h4>${question.title}</h4>
+              <img
+                id="icon"
+                class="arrow__up"
+                src="/assets/arrow-up.png"
+                alt="arrow icon"
+              />
+            </div>
+            <p class="accordion__answer">
+              ${question.content}
+            </p>
+          </div>`
   )
   .join('');
+
+document.querySelector('.accordion__container').innerHTML = contentHTML;
 
 const accordionHeader = document.querySelectorAll('.accordion__header');
 accordionHeader.forEach(accordionHeader => {
