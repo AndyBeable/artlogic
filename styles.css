@@ -13,8 +13,9 @@ body {
 }
 
 .header {
-  background-image: url('/assets/background.jpg');
+  background-image: url('/assets/background-min.jpg');
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   height: 60vh;
 }
@@ -45,7 +46,7 @@ h3 {
   height: 3px;
   background: #fff;
   position: absolute;
-  top: -1rem;
+  top: -2rem;
 }
 
 .main {
@@ -59,8 +60,11 @@ h3 {
 
 .accordion__el {
   border-top: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
   padding: 1.5rem 0;
+}
+
+.accordion__container:last-of-type {
+  border-bottom: 1px solid #cccccc;
 }
 
 .accordion__header {
@@ -80,6 +84,7 @@ h3 {
 
 .arrow__down {
   height: 0.5rem;
+  width: 0.5rem;
   margin-left: auto;
   transition-property: transform;
   transition-duration: 0.5s;
@@ -119,7 +124,7 @@ h3 {
   }
 
   .header__primary h1 {
-    font-size: 42px;
+    font-size: 60px;
   }
 
   .main {
