@@ -52,17 +52,23 @@ let contentHTML = data.rows
 document.querySelector('.accordion__container').innerHTML = contentHTML;
 
 // ACCORDION FUNCTIONALITY
-const accordionHeader = document.querySelectorAll('.accordion__header');
+const accordionHeaders = document.querySelectorAll('.accordion__header');
 
-accordionHeader.forEach(accordionHeader => {
-  accordionHeader.addEventListener('click', () => {
-    const accordionHeight = accordionHeader.nextElementSibling.scrollHeight;
-    accordionHeader.classList.toggle('active');
+const onTabClick = e => {
+  e.preventDefault();
+  if (e.target !== e.currentTarget) {
+    return;
+  }
 
-    if (accordionHeader.classList.contains('active')) {
-      accordionHeader.nextElementSibling.style.maxHeight = `${accordionHeight}px`;
+  accordionHeaders.forEach(accordionHeader => {
+    if (accordionHeader == e.target) {
+      accordionHeader.parentElement.classList.toggle('active');
     } else {
-      accordionHeader.nextElementSibling.style.maxHeight = '';
+      accordionHeader.parentElement.classList.remove('active');
     }
   });
+};
+
+accordionHeaders.forEach(accordionHeader => {
+  accordionHeader.addEventListener('click', onTabClick);
 });
