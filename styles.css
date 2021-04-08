@@ -50,12 +50,12 @@ h3 {
 }
 
 .main {
-  padding: 1rem 2rem;
+  padding: 0 2rem;
 }
 
-.main h3 {
-  color: black;
-  margin: 1.5rem 0;
+.questions {
+  color: #202020;
+  padding: 2rem 0;
 }
 
 .accordion__el {
@@ -130,10 +130,15 @@ h3 {
   .main {
     width: 50%;
     height: 100vh;
+    padding: 0 4rem;
   }
 
   .accordion__header {
     font-size: 20px;
+  }
+
+  .accordion__header h5 {
+    max-width: 90%;
   }
 
   .accordion__answer {
