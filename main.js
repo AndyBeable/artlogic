@@ -48,19 +48,21 @@ let contentHTML = data.rows
           </div>`
   )
   .join('');
-console.log(data.rows);
+
 document.querySelector('.accordion__container').innerHTML = contentHTML;
 
 // ACCORDION FUNCTIONALITY
 const accordionHeader = document.querySelectorAll('.accordion__header');
+
 accordionHeader.forEach(accordionHeader => {
   accordionHeader.addEventListener('click', () => {
     const accordionHeight = accordionHeader.nextElementSibling.scrollHeight;
     accordionHeader.classList.toggle('active');
+
     if (accordionHeader.classList.contains('active')) {
       accordionHeader.nextElementSibling.style.maxHeight = `${accordionHeight}px`;
     } else {
-      accordionHeader.nextElementSibling.style.maxHeight = '0px';
+      accordionHeader.nextElementSibling.style.maxHeight = '';
     }
   });
 });
