@@ -60,7 +60,7 @@ h3 {
 
 .accordion__el {
   border-top: 1px solid #cccccc;
-  padding: 1.5rem 0;
+  padding: 0.5rem 0;
 }
 
 .accordion__container:last-of-type {
@@ -71,7 +71,7 @@ h3 {
   display: flex;
   align-items: center;
   cursor: pointer;
-  margin-bottom: 1rem;
+  padding: 1rem 0;
 }
 
 .accordion__answer {
