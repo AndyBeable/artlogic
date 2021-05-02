@@ -28,6 +28,11 @@ body {
   height: 60vh;
 }
 
+.logo {
+  color: white;
+  font-weight: bolder;
+}
+
 .header__container h1,
 h3 {
   color: #fff;
