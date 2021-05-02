@@ -29,6 +29,34 @@ const data = {
   ],
 };
 
+// let finalData = [];
+
+// fetch('./data.json')
+//   .then((response) => response.json())
+//   .then((data) => (finalData = data.rows))
+//   .then(() => console.log(finalData));
+
+// finalData
+//   .map(
+//     (question, index) =>
+//       `<div class="accordion__el">
+//             <div class="accordion__header">
+//               <h5>${index + 1}. ${question.title}</h5>
+//               <img
+//                 class="arrow__down"
+//                 src="/assets/arrow-down.png"
+//                 alt="arrow icon"
+//               />
+//             </div>
+//             <p class="accordion__answer">
+//               ${question.content}
+//             </p>
+//           </div>`
+//   )
+//   .join('');
+
+// document.querySelector('.accordion__container').innerHTML = finalData;
+
 // RENDER CONTENT
 let contentHTML = data.rows
   .map(
@@ -61,7 +89,7 @@ const onTabClick = (e) => {
   }
 
   accordionHeaders.forEach((accordionHeader) => {
-    if (accordionHeader == e.target) {
+    if (accordionHeader === e.target) {
       accordionHeader.parentElement.classList.toggle('active');
     } else {
       accordionHeader.parentElement.classList.remove('active');
