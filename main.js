@@ -54,13 +54,13 @@ document.querySelector('.accordion__container').innerHTML = contentHTML;
 // ACCORDION FUNCTIONALITY
 const accordionHeaders = document.querySelectorAll('.accordion__header');
 
-const onTabClick = e => {
+const onTabClick = (e) => {
   e.preventDefault();
   if (e.target !== e.currentTarget) {
     return;
   }
 
-  accordionHeaders.forEach(accordionHeader => {
+  accordionHeaders.forEach((accordionHeader) => {
     if (accordionHeader == e.target) {
       accordionHeader.parentElement.classList.toggle('active');
     } else {
@@ -69,6 +69,6 @@ const onTabClick = e => {
   });
 };
 
-accordionHeaders.forEach(accordionHeader => {
+accordionHeaders.forEach((accordionHeader) => {
   accordionHeader.addEventListener('click', onTabClick);
 });
