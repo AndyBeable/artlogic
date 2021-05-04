@@ -29,12 +29,12 @@ const data = {
   ],
 };
 
-// let finalData = [];
-
 // fetch('./data.json')
 //   .then((response) => response.json())
 //   .then((data) => (finalData = data.rows))
 //   .then(() => console.log(finalData));
+
+// let finalData = [];
 
 // finalData
 //   .map(
@@ -78,9 +78,9 @@ let contentHTML = data.rows
   .join('');
 
 document.querySelector('.accordion__container').innerHTML = contentHTML;
+const accordionHeaders = document.querySelectorAll('.accordion__header');
 
 // ACCORDION FUNCTIONALITY
-const accordionHeaders = document.querySelectorAll('.accordion__header');
 
 const onTabClick = (e) => {
   e.preventDefault();

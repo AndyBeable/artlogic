@@ -29,13 +29,13 @@ body {
 }
 
 .logo {
-  color: white;
+  color: hsl(0, 0%, 100%);
   font-weight: bolder;
 }
 
 .header__container h1,
 h3 {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
 }
 
 .header__sub {
@@ -49,7 +49,7 @@ h3 {
   display: block;
   width: 3rem;
   height: 3px;
-  background: #fff;
+  background: hsl(0, 0%, 100%);
   position: absolute;
   top: -2rem;
 }
@@ -59,17 +59,17 @@ h3 {
 }
 
 .questions {
-  color: #202020;
+  color: hsl(0, 0%, 13%);
   padding: 2rem 0;
 }
 
 .accordion__el {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid hsl(0, 0%, 80%);
   padding: 0.5rem 0;
 }
 
 .accordion__container:last-of-type {
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid hsl(0, 0%, 80%);
 }
 
 .accordion__header {
@@ -91,7 +91,7 @@ h3 {
   max-height: 0;
   overflow: hidden;
   transition: all 1s ease;
-  color: #555555;
+  color: hsl(0, 0%, 33%);
   line-height: 1.6rem;
 }
 
